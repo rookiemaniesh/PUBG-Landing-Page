@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet" />
+    
+</head>
+<body>
+  <div class="cursor"></div>
+    <div id="preloader">
+
+    </div>
+
+    <div id="main">
+       
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <nav class="navbar">
+                <div class="navbar-container">
+                  <div class="navbar-left">
+                    <img src="PubgLogo.png" alt="PUBG Logo" />
+                    <div class="nav-links">
+                      <h3><a href="" class="home">HOME</a> </h3>
+                      <div class="dropdown">
+                        <h3 class="dropdown-btn">
+                          GAME INFO
+                          <span class="arrow">▼</span>
+                        </h3>
+                        <div class="dropdown-content">
+                          <a href="#maps">OVERVIEW</a>
+                          <a href="#maps">MAPS</a>
+                          <a href="#weapons">WEAPONS</a>
+                          <a href="#vehicles">VEHICLES</a>
+                          <a href="#characters">CHARACTERS</a>
+                        </div>
+                      </div>
+                      
+                      <div class="dropdown">
+                        <h3 class="dropdown-btn">
+                          EVENTS
+                          <span class="arrow">▼</span>
+                        </h3>
+                        <div class="dropdown-content">
+                          <a href="#maps">CHAOTIC DECEMBER</a>
+                          <a href="#weapons">GOLDEN EGG</a>
+                          <a href="#vehicles">FROSTHEIM</a>
+                          <a href="#characters">USE REDEEM CODE</a>
+                        </div>
+                      </div>
+                      <h3><a href="#page16" class="shop">SHOP</a></h3>
+                      <h3><a href="#page15" class="community">COMMUNITY</a></h3>
+                      <h3><a href="#page5" class="faqs">FAQS</a></h3>
+                    </div>
+                  </div>
+                  <div class="navbar-right">
+                    <button class="login-btn">LOGIN</button>
+                  </div>
+                </div>
+              </nav>
+              <div class="video-section">
+                <video autoplay loop muted class="background-video">
+                  <source src="mainvid.mp4" type="video/mp4" />
+                </video>
+                <div class="hero-content">
+                  <h1>PUBG: BATTLEGROUNDS</h1>
+                  <p>PUBG: BATTLEGROUND is a battle royale that pits 100 players against each other. Players will land, loot and survive in a shrinking battleground as they outplay their opponents to become the lone survivor. </p>
+                  <a href="https://apkdownload.battlegroundsmobileindia.com/3_5_0_19318.apk" target="_blank" class="play-now-btn">PLAY NOW</a>
+                </div>
+                
+              </div>
+        </div>
+        <div id="page2">
+          <div class="scroll-text-container">
+            <div class="scroll-text-left">PLAYERUNKNOWN’S BATTLEGROUND</div>
+            <div class="scroll-text-right">PLAYERUNKNOWN’S BATTLEGROUND</div>
+          </div>
+          <div class="content-wrapper">
+            <div class="patch-card">
+              <div class="patch-card-content">
+                <h2>PATCH NOTES</h2>
+                <button class="arrow-btn">→</button>
+                <div class="platforms">
+                  <button class="platform-btn active">PC</button>
+                  <button class="platform-btn">CONSOLE</button>
+                </div>
+                <h3>Patch Notes - Update 33.2</h3>
+                <p>Introducing Update 33.2: Discover all the latest features and improvements!</p>
+              </div>
+              <div class="video-section">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/pJSdDPhABJ4?si=fccbhftrTsg7zLmC"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <div id="page7-upper">
+          <h1>GAME OVERVIEW</h1>
+          <p>PlayerUnknown’s Battlegrounds (PUBG) is a battle royale game that redefined the gaming landscape. Developed by PUBG Corporation, it thrusts players into intense survival scenarios where up to 100 participants parachute onto an island and compete to be the last one standing.</p>
+        </div>
+       <div id="page7">
+        
+        <canvas></canvas>
+       </div>
+       <div id="page8">
+        <h1><span>LAND.</span> Parachute into a sprawling battleground, carefully selecting your drop zone to plan your strategy wisely. Whether it’s a high-loot area or a quieter spot, your choice can shape your game.</h1>
+       </div>
+       <div id="page9">
+        <h1><span>LOOT.</span> Scavenge through towns, buildings, and crates to gather weapons, armor, health kits, and other essential supplies. Efficient looting not only equips you for combat but also ensures you’re ready for unexpected challenges.</h1>
+       </div>
+       <div id="page10">
+        <h1>
+           <span>SURVIVE.</span>Adapt to the shrinking safe zones, engage in tactical combat, and make calculated moves to outlast opponents. Only through sharp strategy, teamwork, and skill will you rise as the ultimate victor on the battleground.</h1>
+       </div>
+       <div  id="page11">
+        <h1>
+           <span>WIN.</span> often referred to as securing the "Chicken Dinner," is achieved by being the last player or team standing on the battleground. It requires a blend of sharp strategy, precise aim, and smart decision-making throughout the match.</h1>
+       </div>
+       
+       <div id="page14">
+        <h1>NEW VEHICLE: FALCON X1</h1>
+        <model-viewer id="model" class="slide" src="./apache.glb" autoplay camera-controls camera-orbit="180deg 90deg 1.5m" disable-zoom>
+          
+        </model-viewer>
+        <h2>Rotate for 360° View</h2>
+       
+
+        
+       
+            </div>
+            <div id="page16">
+             
+              <div class="elem">
+                
+                  <img src="https://cdn.shopify.com/s/files/1/0160/2840/1712/products/pubg_thelonesurvivor_characterai_644x1000trim_min-yohh.png?v=1667928223&width=500&height=50vh"
+                      alt="">
+                  <div class="text-div">
+                      <h1>Accessories</h1>
+                      <h1>Accessories</h1>
+                  </div>
+                  <img src="https://imgs.search.brave.com/cYUlBidh_pld94FogyTInbgjbbBkbrxCBSGd6jDJB3o/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lbWVh/Lm1lcmNoLnB1Ymcu/Y29tL2Nkbi9zaG9w/L3Byb2R1Y3RzL0RF/U1RPTl9Ta2F0ZWJv/YXJkXzFfMktfNTMz/eC5qcGc_dj0xNjcx/MDMwMzQw"
+                      alt="">
+              </div>
+              <div class="elem">
+                  <img src="https://images.unsplash.com/photo-1564859228273-274232fdb516?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJlbHxlbnwwfHwwfHx8MA%3D%3D&width=500&height=50vh"
+                      alt="">
+                  <div class="text-div">
+                      <h1>Apparel</h1>
+                      <h1>Apparel</h1>
+                  </div>
+                  <img src="https://imgs.search.brave.com/oaSl5z84Bev5TWN51h3KJtOlfDb48COVaJWK-Ns2R8o/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZXJj/aC5wdWJnLmNvbS9j/ZG4vc2hvcC9wcm9k/dWN0cy9Mb25lLVN1/cnYtMTAwOTU3LVlF/TC1NRl9lMTM0YzMy/Ni00ZDJmLTQ5N2Qt/YTQ5MC00N2RmYjM2/ZjkyY2VfNTMzeC5w/bmc_dj0xNjUxMDAz/NjI2"
+                      alt="">
+              </div>
+              <div class="elem">
+                  <img src="https://imgs.search.brave.com/JCmjDnZFgME-aJFsbSUvgEdXCIh3Yqqv4Rhn3tud8BY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9nYW1l/ZmxpcC5jb20vaW1n/L2Zyb250L2NhdGVn/b3J5X2dhbWVpdGVt/cy5qcGc"
+                      alt="">
+                  <div class="text-div">
+                      <h1>In-Game Items</h1>
+                      <h1>In-Game Items</h1>
+                  </div>
+                  <img src="https://imgs.search.brave.com/oyzMn7RfqgYnj-aGB4wvGSBKLc7iFNvSRc4GAFfQW0g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FlLzc5/LzBiL2FlNzkwYjVl/NzEyNjY1MGQ0NzRk/YWIyNjZhODJjZmQ3/LmpwZw"
+                      alt="">
+              </div>
+  
+          </div>    
+       <div id="page15">
+        <header>
+          <h1>COMMUNITY</h1>
+          
+        </header>
+      
+        <div class="community-container">
+          <div class="card">
+            <div class="card-header">
+              <img src="https://pbs.twimg.com/profile_images/1797191384577003520/1rLKCN21_400x400.jpg" alt="Profile" class="profile-pic">
+              <div class="profile-info">
+                <h2>PUBG: BATTLEGROUNDS</h2>
+                <p>@PUBG</p>
+              </div>
+              <button class="close-btn">X</button>
+            </div>
+            <div class="card-image">
+              <img src="https://pbs.twimg.com/media/GhAWPQdbEAAhQTf?format=jpg&name=medium" alt="Mythical Creatures">
+            </div>
+            <div class="card-body">
+              <p>
+                Ancient monsters reborn. Step into the realm of myth with the Spring Fest 2025 skins.
+              </p>
+              <a href="https://x.com/PUBG/status/1878025504722461103">Read More</a>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-header">
+              <img src="https://pbs.twimg.com/profile_images/1797191384577003520/1rLKCN21_400x400.jpg" alt="Profile" class="profile-pic">
+              <div class="profile-info">
+                <h2>PUBG: BATTLEGROUNDS</h2>
+                <p>@PUBG</p>
+              </div>
+              <button class="close-btn">X</button>
+            </div>
+            <div class="card-tweet">
+              <blockquote class="twitter-tweet">
+                <div class="card-image">
+                  <img src="https://pbs.twimg.com/media/GfyXimwbkAAY-Xv?format=png&name=medium" alt="tweet">
+                </div>
+                <p lang="en" dir="ltr">This Spring, myths come to life. Wield the Minotaur-AUG, Medusa-Beryl M762, Cerberus-M249, and the Siren-Pan. With them by your side, even the gods shall kneel. Are you ready? 
+                  </p>&mdash; PUBG (@PUBG) <a href="https://x.com/PUBG/status/1877641541310967828">January 12, 2025</a>
+              </blockquote>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-header">
+              <img src="https://pbs.twimg.com/profile_images/1797191384577003520/1rLKCN21_400x400.jpg" alt="Profile" class="profile-pic">
+              <div class="profile-info">
+                <h2>PUBG: BATTLEGROUNDS</h2>
+                <p>@PUBG</p>
+              </div>
+              <button class="close-btn">X</button>
+            </div>
+            <div class="card-image">
+              <img src="https://pbs.twimg.com/media/GgqdfRYbMAAzeD6?format=jpg&name=medium" alt="Shadow Creatures">
+            </div>
+            <div class="card-body">
+              <p>
+                They've hunted, lured, and tormented countless souls from the shadows of Mount Olympus for eons.
+              </p>
+              <a href="https://x.com/PUBG/status/1876916759036404108">Read More</a>
+            </div>
+          </div>
+        </div>
+       </div>
+           
+            <div id="page5">
+              <h2>FAQS</h2>
+              <div class="box"
+                  data-image="https://wallpapercave.com/wp/wp2208676.jpg">
+                  <h3>Q:   What is PLAYERUNKNOWN’S BATTLEGROUNDS?</h3>
+                  <h4>2020</h4>
+              </div>
+              <div class="box"
+                  data-image="https://img.freepik.com/free-photo/world-collapse-doomsday-scene-digital-painting_456031-63.jpg?semt=ais_hybrid">
+                  <h3>Q:   How much does the game cost?</h3>
+                  <h4>2021</h4>
+              </div>
+              <div class="box"
+                  data-image="https://wallpapercave.com/wp/wp14826914.webp">
+                  <h3>Q:   What VOIP provider does PUBG use on PC?</h3>
+                  <h4>2021</h4>
+              </div>
+              <div class="box"
+                  data-image="https://wallpapercave.com/wp/wp14826917.webp">
+                  <h3>Q:   What Anti-cheat does PUBG use on PC? </h3>
+                  <h4>2023</h4>
+              </div>
+              <div class="box"
+                  data-image="https://wallpapercave.com/wp/wp2208685.png">
+                  <h3>Q:   Is the game 64 bit or 32 bit?</h3>
+                  <h4>2023</h4>
+              </div>
+              
+          
+          
+          </div>
+       <div id="smlinks">
+        <footer>   
+            <div class="footer-social">
+              <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+              <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+              <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+              <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+              <a href="#"><img src="discord-icon.png" alt="Discord"></a>
+              
+              <a href="#"><img src="reddit-icon.png" alt="Reddit"></a>
+            </div>
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <span>|</span>
+              <a href="#">Terms of Service</a>
+              <span>|</span>
+              <a href="#">Rules of Conduct</a>
+              <span>|</span>
+              <a href="#">Content Creation Guideline</a>
+              <span>|</span>
+              <a href="#">Cookie Preferences</a>
+            </div>
+            <div class="footer-copyright">
+              <p>© 2023 Krafton, Inc. PUBG is a registered trademark or service mark of Krafton, Inc.</p>
+            </div>
+            <div class="footer-time">
+              <div class="time-zone">
+                <p>UTC</p>
+                <p id="utc-time"></p>
+              </div>
+              <div class="time-zone">
+                <p>IST</p>
+                <p id="ist-time"></p>
+              </div>
+            </div>
+            <div class="footer-rating">
+              <img src="esrb-icon.webp" alt="ESRB Rating">
+            </div>
+          </footer>
+          
+       </div>
+    </div>
+ 
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  
+    <script src="script.js"></script>
+</body>
+</html>
